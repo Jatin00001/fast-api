@@ -27,7 +27,7 @@ class Settings(BaseSettings):
     # Database settings - PostgreSQL with better defaults
     DATABASE_URL: str = os.getenv(
         "DATABASE_URL", 
-        "postgresql+asyncpg://postgres:postgres@localhost/fastapi_db"
+        "postgresql+asyncpg://fastapi_user:SecureFastAPI2024!@localhost:5432/fastapi_app_db"
     )
     
     # AWS settings (optional)
